@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# .gitignore  -  keeps secrets and generated data out of the GitHub repository
+# ---------------------------------------------------------------------------
+
+# --- Secrets (NEVER commit these) ------------------------------------------
+.env
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# --- Testing ----------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Virtual environments ---------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+
+# --- Editors / IDEs ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs -------------------------------------------------------------------
+logs/*.log
+
+# --- Generated data (re-created every pipeline run) -------------------------
+data/raw/*
+data/processed/*
+data/rejected/*
+
+# --- Generated charts -------------------------------------------------------
+reports/*.png
+
+# --- Keep the empty folder structure in Git --------------------------------
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/rejected/.gitkeep
+!logs/.gitkeep
+!reports/.gitkeep
+
+# --- OS files ---------------------------------------------------------------
+.DS_Store
+Thumbs.db

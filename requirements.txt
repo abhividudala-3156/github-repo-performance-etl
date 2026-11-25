@@ -1,0 +1,12 @@
+# Core dependencies for the GitHub Repository Performance Analytics ETL project.
+# Install with:  pip install -r requirements.txt
+# (Tested on Windows 11 + Python 3.12 with the versions noted in the comments.)
+
+requests>=2.31.0          # GitHub REST API communication
+pandas>=2.1.0             # Data cleaning and transformation
+numpy>=1.26.0             # Numerical operations
+SQLAlchemy>=2.0.0         # Database connectivity layer
+psycopg2-binary>=2.9.9    # PostgreSQL driver used by SQLAlchemy
+matplotlib>=3.8.0         # Static charts
+python-dotenv>=1.0.0      # Reads database credentials from the local .env file
+pytest>=8.0.0             # Unit tests
