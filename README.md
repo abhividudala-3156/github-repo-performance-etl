@@ -577,3 +577,5 @@ pytest -v
 
 # 6. run the business queries: pgAdmin -> Query Tool -> analysis/business_queries.sql
 ```
+> On machines with an Application Control policy, run `python -m pytest -v`
+> instead of `pytest -v`.
